@@ -1,7 +1,7 @@
 <html>
   <body>
+<speach role="Дедушка" sex="муж">
 <se>
-<w>Дедушка<ana lex="дедушка" gr="S,m,anim=nom,sg"/></w>@ 
 <w>Ахахаха<ana lex="ахахах" qual="bastard" gr="S,persn,m,anim=acc,sg"/><ana lex="ахахах" qual="bastard" gr="S,persn,m,anim=gen,sg"/></w>… 
 </se>
 <se>
@@ -67,9 +67,15 @@
 <w>а<ana lex="а" gr="CONJ="/></w> 
 <w>теперь<ana lex="теперь" gr="ADV="/></w> 
 <w>Самара<ana lex="самара" gr="S,geo,f,inan=nom,sg"/></w>. 
-<w>Маша<ana lex="маша" gr="S,persn,f,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Маша" sex="жен"> 
+<se>
 <w>Ага<ana lex="ага" gr="PART="/></w>. 
-<w>Дедушка<ana lex="дедушка" gr="S,m,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Дедушка" sex="муж">
+<se>
 <w>Вот<ana lex="вот" gr="PART="/></w>. 
 </se>
 <se>
@@ -178,9 +184,15 @@
 <w>сказать<ana lex="сказать" gr="V,pf,tran=inf"/></w>, 
 <w>марку<ana lex="марка" gr="S,f,inan=acc,sg"/></w> 
 <w>Москвы<ana lex="москва" gr="S,geo,f,inan=acc,pl"/><ana lex="москва" gr="S,geo,f,inan=gen,sg"/><ana lex="москва" gr="S,geo,f,inan=nom,pl"/></w>…
-<w>Маша<ana lex="маша" gr="S,persn,f,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Маша" sex="жен"> 
+<se>
 <w>Ага<ana lex="ага" gr="PART="/></w>…
-<w>Дедушка<ana lex="дедушка" gr="S,m,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Дедушка" sex="муж">
+<se>
 <w>И<ana lex="и" gr="CONJ="/></w> 
 <w>старались<ana lex="стараться" gr="V,ipf,intr=praet,pl,indic"/></w> 
 <w>строить<ana lex="строить" gr="V,ipf,tran=inf"/></w> 
@@ -339,8 +351,7 @@
 <w>И<ana lex="и" gr="CONJ="/></w> 
 <w>наконец<ana lex="наконец" gr="ADV,parenth="/></w> 
 <w>она<ana lex="она" gr="SPRO,sg,3p,f=nom"/></w> 
-<distinct form=" смиловилась"> <w>смилостивилась<ana lex="смилостивиться" gr="V,pf,intr=praet,sg,indic,f"/></w> /
-<w>distinct</w>, 
+<distinct form=" смиловилась"> <w>смилостивилась<ana lex="смилостивиться" gr="V,pf,intr=praet,sg,indic,f"/></w></distinct>, 
 <w>ха-ха<ana lex="ха-ха" gr="INTJ="/></w>… 
 </se>
 <se>
@@ -409,7 +420,10 @@
 <se>
 <w>Вот<ana lex="вот" gr="PART="/></w> 
 <w>так<ana lex="так" gr="ADVPRO="/></w>.
-<w>Маша<ana lex="маша" gr="S,persn,f,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Маша" sex="жен"> 
+<se>
 <w>Расскажи<ana lex="рассказать" gr="V,pf=sg,imper,2p"/></w>, 
 <w>пожалуйста<ana lex="пожалуйста" gr="PART="/></w>, 
 <w>быстро<ana lex="быстро" gr="ADV="/></w>, 
@@ -433,7 +447,10 @@
 <w>к<ana lex="к" gr="PR="/></w> 
 <w>столетию<ana lex="столетие" gr="S,n,inan=dat,sg"/></w> 
 <w>какому-то<ana lex="какой-то" gr="APRO=dat,sg,m"/><ana lex="какой-то" gr="APRO=dat,sg,n"/></w>?
-<w>Дедушка<ana lex="дедушка" gr="S,m,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Дедушка" sex="муж">
+<se>
 <w>А<ana lex="а" gr="S,abbr=loc,pl"/><ana lex="а" gr="S,abbr=loc,sg"/><ana lex="а" gr="S,abbr=acc,pl"/><ana lex="а" gr="S,abbr=acc,sg"/><ana lex="а" gr="S,abbr=dat,pl"/><ana lex="а" gr="S,abbr=dat,sg"/><ana lex="а" gr="S,abbr=gen,pl"/><ana lex="а" gr="S,abbr=gen,sg"/><ana lex="а" gr="S,abbr=ins,pl"/><ana lex="а" gr="S,abbr=ins,sg"/><ana lex="а" gr="S,abbr=nom,pl"/><ana lex="а" gr="S,abbr=nom,sg"/></w>, 
 <w>да<ana lex="да" gr="CONJ="/></w>, 
 <w>мы<ana lex="мы" gr="SPRO,pl,1p=nom"/></w> 
@@ -558,7 +575,10 @@
 <w>все<ana lex="все" gr="SPRO,pl=acc"/><ana lex="все" gr="SPRO,pl=nom"/></w> 
 <w>стало<ana lex="стать" gr="V,pf,intr=praet,sg,indic,n"/></w> 
 <w>нормально<ana lex="нормально" gr="ADV="/></w>. 
-<w>Маша<ana lex="маша" gr="S,persn,f,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Маша" sex="жен"> 
+<se>
 <w>Ну<ana lex="ну" gr="PART="/></w>, 
 <w>расскажи<ana lex="рассказать" gr="V,pf=sg,imper,2p"/></w>, 
 <w>как<ana lex="как" gr="ADVPRO="/></w> 
@@ -578,15 +598,20 @@
 <w>строит<ana lex="строить" gr="V,ipf,tran=inpraes,sg,indic,3p"/></w>, 
 <w>один<ana lex="один" gr="APRO=acc,sg,m,inan"/><ana lex="один" gr="APRO=nom,sg,m"/></w> 
 <w>переносит<ana lex="переносить" gr="V,ipf,tran=inpraes,sg,indic,3p"/></w>…
-<w>Дедушка<ana lex="дедушка" gr="S,m,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Дедушка" sex="муж">
+<se>
 <w>Чего<ana lex="чего" gr="ADVPRO="/></w>-
 <w>чего<ana lex="что" gr="SPRO,sg,n,inan=gen"/></w>-
 <w>чего<ana lex="что" gr="SPRO,sg,n,inan=gen"/></w>-
 <w>чего<ana lex="что" gr="SPRO,sg,n,inan=gen"/></w>?
-<w>Маша<ana lex="маша" gr="S,persn,f,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Маша" sex="жен"> 
+<se>
 <w>Ну<ana lex="ну" gr="PART="/></w> 
-<distinct form=" расска"><w>расскажи<ana lex="рассказать" gr="V,pf=sg,imper,2p"/></w>/
-<w>distinct</w>… 
+<distinct form=" расска"><w>расскажи<ana lex="рассказать" gr="V,pf=sg,imper,2p"/></w></distinct>… 
 </se>
 <se>
 <w>Ты<ana lex="ты" gr="SPRO,sg,2p=nom"/></w> 
@@ -597,7 +622,10 @@
 <w>строил<ana lex="строить" gr="V,ipf,tran=praet,sg,indic,m"/></w>, 
 <w>раньше<ana lex="рано" gr="ADV=comp"/></w> 
 <w>всегда<ana lex="всегда" gr="ADVPRO="/></w>.
-<w>Дедушка<ana lex="дедушка" gr="S,m,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Дедушка" sex="муж">
+<se>
 <w>Что-то<ana lex="что-то" gr="SPRO,sg,n,inan=acc"/><ana lex="что-то" gr="SPRO,sg,n,inan=nom"/></w> 
 <w>я<ana lex="я" gr="SPRO,sg,1p=nom"/></w> 
 <w>не<ana lex="не" gr="PART="/></w> 
@@ -609,7 +637,10 @@
 <w>Говорят<ana lex="говорить" gr="V,ipf,tran=inpraes,pl,indic,3p"/></w> 
 <w>одновременно<ana lex="одновременно" gr="ADV="/></w>/
 <w>span</w>.
-<w>Маша<ana lex="маша" gr="S,persn,f,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Маша" sex="жен"> 
+<se>
 <w>Ну<ana lex="ну" gr="PART="/></w> 
 <w>о<ana lex="о" gr="PR="/></w> 
 <w>том<ana lex="то" gr="SPRO,sg,n,inan=loc"/></w>, 
@@ -631,14 +662,21 @@
 </se>
 <se>
 <w>Нет<ana lex="нет" gr="PART="/></w>?
-<w>Дедушка<ana lex="дедушка" gr="S,m,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Дедушка" sex="муж">
+<se>
 <w>Нет<ana lex="нет" gr="PART="/></w>, 
 <w>не<ana lex="не" gr="PART="/></w> 
 <w>знаю<ana lex="знать" gr="V,ipf,tran=inpraes,sg,indic,1p"/></w>.
-<w>Маша<ana lex="маша" gr="S,persn,f,anim=nom,sg"/></w>@ 
+</se>
+</speach>
+<speach role="Маша" sex="жен"> 
+<se>
 <w>Хорошо<ana lex="хорошо" gr="ADV=parenth"/></w>, 
 <w>я<ana lex="я" gr="SPRO,sg,1p=nom"/></w> 
 <w>думаю<ana lex="думать" gr="V,ipf,intr=inpraes,sg,indic,1p"/></w>.
 </se>
+</speach>
 </body>
 </html>
