@@ -20,7 +20,7 @@
 <w>был<ana lex="быть" gr="V,intr=praet,sg,indic,m,ipf"/></w> 
 <w>откомандирован<ana lex="откомандировать" gr="V,pf=praet,sg,partcp,brev,m,pass"/></w> 
 <w>из<ana lex="из" gr="PR="/></w> 
-<w>ГЛАВМОССТРОЯ<ana lex="главмосстрой" gr="S,sg,m,inan=gen"/></w> 
+<distinct form="ГЛАВМОССТРОЯ">Главного управления по жилищному и гражданскому строительству</distinct> 
 <w>на<ana lex="на" gr="PR="/></w> 
 <w>строительство<ana lex="строительство" gr="S,n,inan=acc,sg"/><ana lex="строительство" gr="S,n,inan=nom,sg"/></w> 
 <w>жилья<ana lex="жилье" gr="S,sg,n,inan=gen"/></w> 
@@ -53,7 +53,7 @@
 <w>были<ana lex="быть" gr="V,intr=praet,pl,indic,ipf"/></w> 
 <w>сложности<ana lex="сложность" gr="S,f,inan=loc,sg"/><ana lex="сложность" gr="S,f,inan=acc,pl"/><ana lex="сложность" gr="S,f,inan=dat,sg"/><ana lex="сложность" gr="S,f,inan=gen,sg"/><ana lex="сложность" gr="S,f,inan=nom,pl"/></w> 
 <w>с<ana lex="с" gr="PR="/></w> 
-<w>ГАСКом<ana lex="гасок" qual="bastard" gr="S,m,inan=ins,sg"/></w>, 
+<distinct form="ГАСКом">Государственным архитектурно-строительным контролем </distinct>, 
 <w>с<ana lex="с" gr="PR="/></w> 
 <w>местным<ana lex="местный" gr="A=dat,pl,plen"/><ana lex="местный" gr="A=ins,sg,plen,m"/><ana lex="местный" gr="A=ins,sg,plen,n"/></w>, 
 <w>с<ana lex="с" gr="PR="/></w> 
@@ -154,7 +154,7 @@
 <w>я<ana lex="я" gr="SPRO,sg,1p=nom"/></w> 
 <w>приехал<ana lex="приехать" gr="V,pf,intr=praet,sg,indic,m"/></w> 
 <w>в<ana lex="в" gr="PR="/></w> 
-<w>ГАСК<ana lex="гаск" qual="bastard" gr="S,m,anim=nom,sg"/></w>, 
+<distinct from="ГАСК">Государственный архитектурно-строительный контроль</distinct>, 
 <w>то<ana lex="то" gr="PART="/></w> 
 <w>меня<ana lex="я" gr="SPRO,sg,1p=acc"/><ana lex="я" gr="SPRO,sg,1p=gen"/></w> 
 <w>инспектор<ana lex="инспектор" gr="S,m,anim=nom,sg"/></w>, 
@@ -565,7 +565,7 @@
 <w>все<ana lex="все" gr="SPRO,pl=acc"/><ana lex="все" gr="SPRO,pl=nom"/></w> 
 <w>обеспечили<ana lex="обеспечить" gr="V,pf,tran=praet,pl,indic"/></w>, 
 <w>а<ana lex="а" gr="CONJ="/></w> 
-<w>Куйбышевгидрострой<ana lex="куйбышевгидрострой" qual="bastard" gr="S,sg,m,inan=acc"/><ana lex="куйбышевгидрострой" qual="bastard" gr="S,sg,m,inan=nom"/></w> 
+<distinct form="Куйбышевгидрострой">Главное управление по строительству Куйбышевской гидроэлектростанции</distinct>
 <w>немножко<ana lex="немножко" gr="ADV="/></w> 
 <w>запоздал<ana lex="запоздать" gr="V,pf,intr=praet,sg,indic,m"/></w>, 
 <w>но<ana lex="но" gr="CONJ="/></w> 
