@@ -13,7 +13,7 @@ def open_file(path):
 
 
 def find_auth(raw):
-    auth_arr = re.search('<title>(\w+)\..*</title>', raw).group(1)
+    auth_arr = re.search('<title>([а-яёА-ЯЁa-zA-Z- ]*)\..*</title>', raw).group(1)
     auth = ''
     for l in auth_arr:
         auth += l
@@ -21,7 +21,7 @@ def find_auth(raw):
 
 
 def find_date(raw):
-    date_arr = re.search('<title>.*, ([0-9.]+)</title>', raw).group(1)
+    date_arr = re.search('<title>.*, ([0-9.]*)</title>', raw).group(1)
     date = ''
     for l in date_arr:
         date += l
