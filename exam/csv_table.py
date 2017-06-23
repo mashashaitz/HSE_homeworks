@@ -37,8 +37,8 @@ def all_in_all():
         for f in files:
             file_all.append(f)
             raw = open_file(os.path.join(root, f))
-            auth.append(raw)
-            date.append(raw)           
+            auth.append(find_auth(raw))
+            date.append(find_date(raw))           
     return auth, date, file_all
 
 
