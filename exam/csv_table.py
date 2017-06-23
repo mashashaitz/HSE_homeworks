@@ -22,12 +22,10 @@ def find_auth(f):
         auth += l
     return auth
 
-<title>Сергей Латышев.
-Открытие Паралимпийских игр // «ИТАР-ТАСС», 2004.09.18</title>
+
 def find_date(f):
     try:
-        date_arr = re.search('<title>.*
-                             .</title>', r).group(1)
+        date_arr = re.search('<title>.*//.*, ([0-9.]*)</title>', r).group(1)
     except Exception:
         date_arr = []
     date = ''
@@ -43,19 +41,27 @@ def all_in_all():
     path = 'news'
     for root, dirs, files in os.walk(path):
         for f in files:
-            file_all.append[f]
+            file_all.append(f)
             auth.append(find_auth(f))
             date.append(find_date(f))           
     return auth, date, file_all
 
 
-#def wrt(stri):
-    f = open("result.txt", 'w', encoding = "utf-8")
+def wrt(stri):
+    f = open("result.csv", 'w', encoding = "utf-8")
     f.write(stri)
     f.close()
 
 def main():
     auth, date, file_all = all_in_all()
-    
+    stri = ''
+    for idx, file in enumerate(file_all):
+        stri += file
+        stri += ','
+        stri += auth[idx]
+        stri += ','
+        stri += date[idx]
+        stri += '\n'
+    wrt(stri)
 
 main()
