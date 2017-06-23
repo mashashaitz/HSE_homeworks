@@ -12,22 +12,16 @@ def open_file(path):
     return st
 
 
-def find_auth(f):
-    try:
-        auth_arr = re.search('<title>(\w+)\..*//.*</title>', r).group(1)
-    except Exception:
-        auth_arr = []
+def find_auth(raw):
+    auth_arr = re.search('<title>(\w+)\..*//.*</title>', raw).group(1)
     auth = ''
     for l in auth_arr:
         auth += l
     return auth
 
 
-def find_date(f):
-    try:
-        date_arr = re.search('<title>.*//.*, ([0-9.]*)</title>', r).group(1)
-    except Exception:
-        date_arr = []
+def find_date(raw):
+    date_arr = re.search('<title>.*//.*, ([0-9.]*)</title>', raw).group(1)
     date = ''
     for l in date_arr:
         date += l
@@ -42,8 +36,9 @@ def all_in_all():
     for root, dirs, files in os.walk(path):
         for f in files:
             file_all.append(f)
-            auth.append(find_auth(f))
-            date.append(find_date(f))           
+            raw = open_file(os.path.join(root, f))
+            auth.append(raw)
+            date.append(raw)           
     return auth, date, file_all
 
 
