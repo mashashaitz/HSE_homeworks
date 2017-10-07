@@ -13,9 +13,6 @@ trash = 'ИМЕНА БИБЛИОТЕКА ИЕРУСАЛИМСКОГО ЖУРНА
 regSpace = re.compile('\s{2,}', re.DOTALL)
 
 
-time.sleep(2)
-
-
 class web_articles:
     def __init__(self, url, name, author):
         self.url = url
@@ -63,6 +60,7 @@ def find_urls():
 
 def find_categories(url):   
     categories = []
+    time.sleep(2)
 
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
@@ -95,6 +93,7 @@ def find_articles(html):
 
 
 def get_text(url):
+    time.sleep(2)
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
        html = response.read().decode('utf-8')
