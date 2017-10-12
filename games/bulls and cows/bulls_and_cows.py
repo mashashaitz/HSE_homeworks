@@ -288,7 +288,7 @@ def create_letters():
         button.grid(row = row_of_letter, column = column_of_letter)
 
 
-def change_colour(button):
+def click_on_letter_2_real(button):
     row_of_letter = 5
     column_of_letter = 1
     for letter in alphabet[0:-1]:
@@ -297,15 +297,14 @@ def change_colour(button):
             column_of_letter = 2
             row_of_letter += 1
         if button.config('text')[-1].lower() == letter.lower():
-            label = tk.Label(root, text = '', width = 7, height = 1)
-            label.config(bg = "White", bd = 4, fg = "Black", font = ('times', 11))
+            label = tk.Label(root, text = '', width = 4)
+            label.config(bg = "White", bd = 4, fg = "Black", font = ('times', 11, 'overstrike'))
             label.bind('<Button-1>', click_on_letter_2)
             label.grid(row = row_of_letter, column = column_of_letter)
 
 
-
 def click_on_letter_2(event):
-    change_colour(event.widget)
+    click_on_letter_2_real(event.widget)
 
     
 def create_letters_2():
@@ -313,7 +312,7 @@ def create_letters_2():
     column_of_letter = 1
     for letter in alphabet[0:-1]:
         button_1 = tk.Button(root, text = letter, width = 4)
-        button_1.config(bg = "Green", bd = 4, fg = "Black", font = ('times', 11))
+        button_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 11, 'overstrike'))
         button_1.bind('<Button-1>', click_on_letter_2)
         column_of_letter += 1
         if column_of_letter >  18:
@@ -327,7 +326,7 @@ def create_letters_3(event):
     column_of_letter = 1
     for letter in alphabet[0:-1]:
         button_1 = tk.Button(root, text = letter, width = 4)
-        button_1.config(bg = "Green", bd = 4, fg = "Black", font = ('times', 11))
+        button_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 11))
         button_1.bind('<Button-1>', click_on_letter_2)
         column_of_letter += 1
         if column_of_letter >  18:
@@ -381,7 +380,7 @@ def main():
     words = find_right_words()
 
     button = tk.Button(root, text = "Новая игра", width = 16)
-    button.config(bg = "White", bd = 4, fg = "Black", font = ('times', 12))
+    button.config(bg = "White", bd = 4, fg = "Black", font = ('times', 12, 'overstrike'))
     button.bind('<Button-1>', createall)
     button.grid(row = 1, column = 1)
 
