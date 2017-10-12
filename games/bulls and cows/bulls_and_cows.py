@@ -226,32 +226,37 @@ def how_many_bulls():
 def give_up(event):
     global label_1
     global label_2
-    
-    label_2 = tk.Label(root, text = 'Вы сдались(', width = 16)
-    label_2.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
-    label_2.grid(row = 3, column = 1)
-            
-    label_1 = tk.Label(root, text = word, width = 16)
-    label_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
-    label_1.grid(row = 2, column = 1)
 
-    draw_loss()
+    if '*' in label_2.config('text')[-1]:
+    
+        label_2 = tk.Label(root, text = 'Вы сдались(', width = 16)
+        label_2.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
+        label_2.grid(row = 3, column = 1)
+                
+        label_1 = tk.Label(root, text = word, width = 16)
+        label_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
+        label_1.grid(row = 2, column = 1)
+
+        draw_loss()
 
 
 def give_up_with_style(event):
     global label_1
     global label_2
-    
-    label_2 = tk.Label(root, text = 'Вы сдались)', width = 16)
-    label_2.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
-    label_2.grid(row = 3, column = 1)
 
-    label_1 = tk.Label(root, text = word, width = 16)
-    label_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
-    label_1.grid(row = 2, column = 1)
-
-    draw_victory()
+    if '*' in label_2.config('text')[-1]:
     
+        label_2 = tk.Label(root, text = 'Вы сдались)', width = 16)
+        label_2.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
+        label_2.grid(row = 3, column = 1)
+
+        label_1 = tk.Label(root, text = word, width = 16)
+        label_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
+        label_1.grid(row = 2, column = 1)
+
+        draw_victory()
+
+        
 def find_bulls(button):
     global label_2
     if button.config('text')[-1].lower() == '-' and len(label_2.config('text')[-1]) == 4:
