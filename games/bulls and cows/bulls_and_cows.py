@@ -163,6 +163,54 @@ def create_letters():
         button.grid(row = row_of_letter, column = column_of_letter)
 
 
+def change_colour(button):
+    row_of_letter = 5
+    column_of_letter = 1
+    for letter in alphabet[0:-1]:
+        column_of_letter += 1
+        if column_of_letter >  18:
+            column_of_letter = 2
+            row_of_letter += 1
+        if button.config('text')[-1].lower() == letter.lower():
+            label = tk.Label(root, text = '', width = 7, height = 1)
+            label.config(bg = "White", bd = 4, fg = "Black", font = ('times', 11))
+            label.bind('<Button-1>', click_on_letter_2)
+            label.grid(row = row_of_letter, column = column_of_letter)
+
+
+
+def click_on_letter_2(event):
+    change_colour(event.widget)
+
+    
+def create_letters_2():
+    row_of_letter = 5
+    column_of_letter = 1
+    for letter in alphabet[0:-1]:
+        button_1 = tk.Button(root, text = letter, width = 4)
+        button_1.config(bg = "Green", bd = 4, fg = "Black", font = ('times', 11))
+        button_1.bind('<Button-1>', click_on_letter_2)
+        column_of_letter += 1
+        if column_of_letter >  18:
+            column_of_letter = 2
+            row_of_letter += 1
+        button_1.grid(row = row_of_letter, column = column_of_letter)
+
+        
+def create_letters_3(event):
+    row_of_letter = 5
+    column_of_letter = 1
+    for letter in alphabet[0:-1]:
+        button_1 = tk.Button(root, text = letter, width = 4)
+        button_1.config(bg = "Green", bd = 4, fg = "Black", font = ('times', 11))
+        button_1.bind('<Button-1>', click_on_letter_2)
+        column_of_letter += 1
+        if column_of_letter >  18:
+            column_of_letter = 2
+            row_of_letter += 1
+        button_1.grid(row = row_of_letter, column = column_of_letter)
+
+
 def createall(event):
     global word
     word = random.choice(words)
@@ -187,6 +235,7 @@ def createall(event):
     label_2.grid(row = 3, column = 1)
 
     create_letters()
+    create_letters_2()
     
 
 def main():
@@ -200,11 +249,41 @@ def main():
     global words
     words = find_right_words()
 
-
     button = tk.Button(root, text = "Новая игра", width = 16)
     button.config(bg = "White", bd = 4, fg = "Black", font = ('times', 12, 'italic'))
     button.bind('<Button-1>', createall)
     button.grid(row = 1, column = 1)
+
+    button_1 = tk.Button(root, text = "+", width = 4)
+    button_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 12, 'italic'))
+    button_1.bind('<Button-1>', create_letters_3)
+    button_1.grid(row = 6, column = 18)
+
+    global word
+    word = random.choice(words)
+
+    global list_of_words
+    list_of_words = []
+    list_of_words.append('слово б к \n')
+    listbox = tk.Listbox(root, width = 16, height = 16)
+    listbox.config(bg = "White", bd = 1, fg = "Black", font = ('times', 13))
+    listbox.insert(tk.END, 'слово Б К \n')
+    listbox.grid(row = 4, column = 1)
+
+    global label_1
+    global label_2
+    
+    label_1 = tk.Label(root, text = '****', width = 16)
+    label_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
+    label_1.grid(row = 2, column = 1)
+
+    label_2 = tk.Label(root, text = '____', width = 16)
+    label_2.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
+    label_2.grid(row = 3, column = 1)
+
+    create_letters()
+    create_letters_2()
+    
 
     root.mainloop()
     
