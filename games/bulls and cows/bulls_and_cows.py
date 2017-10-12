@@ -227,7 +227,7 @@ def give_up(event):
     global label_1
     global label_2
 
-    if '*' in label_2.config('text')[-1]:
+    if '*' in label_1.config('text')[-1]:
     
         label_2 = tk.Label(root, text = 'Вы сдались(', width = 16)
         label_2.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
@@ -244,7 +244,7 @@ def give_up_with_style(event):
     global label_1
     global label_2
 
-    if '*' in label_2.config('text')[-1]:
+    if '*' in label_1.config('text')[-1]:
     
         label_2 = tk.Label(root, text = 'Вы сдались)', width = 16)
         label_2.config(bg = "White", bd = 4, fg = "Black", font = ('times', 13))
