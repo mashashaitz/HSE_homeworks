@@ -312,7 +312,7 @@ def create_letters_2():
     column_of_letter = 1
     for letter in alphabet[0:-1]:
         button_1 = tk.Button(root, text = letter, width = 4)
-        button_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 11, 'overstrike'))
+        button_1.config(bg = "White", bd = 4, fg = "Black", font = ('times', 11))
         button_1.bind('<Button-1>', click_on_letter_2)
         column_of_letter += 1
         if column_of_letter >  18:
@@ -380,7 +380,7 @@ def main():
     words = find_right_words()
 
     button = tk.Button(root, text = "Новая игра", width = 16)
-    button.config(bg = "White", bd = 4, fg = "Black", font = ('times', 12, 'overstrike'))
+    button.config(bg = "White", bd = 4, fg = "Black", font = ('times', 12))
     button.bind('<Button-1>', createall)
     button.grid(row = 1, column = 1)
 
