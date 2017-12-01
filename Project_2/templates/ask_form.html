@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Как правильно по-русски?</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="description" content="форма с вопросами">
+	</head>
+	<body>
+		<header style="background-color:#2E7D32; border-radius: 30px 30px 30px 30px; "> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-4">
+						<br/><br/>
+						<h1 style="color:white; margin:20px 20px 20px 20px;">Вы можете найти результаты определенного города, возраста, и т.д.</h1>
+						<hr>
+						<p><i style="color:white; margin:20px 20px 0px 20px;">Если искомого результата нет - вас просто перенаправят на эту же страницу</i></p> 
+	                </div>
+					<div class="col-md-4">
+        	            <img src="{{url_for('static', filename='H3sot.jpg')}}" title="Аж трясёт" alt="" style="height:200px; width:400px; margin:0px 20px 5px 1000px; " >
+					</div>
+	            </div>
+			</div>
+		</header>
+
+ 		<form action="/results" method="GET">
+			<h2>Что вы хотите узнать?</h2>
+				<p>возраст</p>
+				<p><input type="text" name="age" style="width:800px; "/></p>
+				<p>город проживания</p>
+				<p><input type="text" name="city" style="width:800px; "/></p>
+				<p>образование</p>
+				<p><input type="text" name="education" style="width:800px; "/></p>
+				<p>профессия</p>
+				<p><input type="text" name="profession" style="width:800px; "/></p>
+				<p>прочие языки</p>
+				<p><input type="text" name="language" style="width:800px; "/></p>
+    		<input type="submit" value="Отправить"></p>
+ 		</form>
+	</body>
+</html>
