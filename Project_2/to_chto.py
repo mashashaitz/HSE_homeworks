@@ -1,6 +1,5 @@
 from flask import Flask
 from flask import url_for, render_template, request, redirect
-import csv
 import json
 import random
 import sqlite3
@@ -153,4 +152,3 @@ def show_results():
            
 if __name__ == '__main__':
     app.run(debug=True) #можно ли перезапускать файл
-
