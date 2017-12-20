@@ -26,9 +26,9 @@
 					<div class="col-md-3 col-md-offset-2 col-sm-12">
 						 <form action="/test_result">
 						 	{% for question in questions %}
-    						<p><input name="{{ question[1] }}" type="radio" value='{{ question[0] }}'> {{ question[0] }} <input name="{{ question[1] }}" type="radio" value="{{ question[1] }}"> {{ question[1] }}</p>
+    						<p><input name="{{ question[1] }}" type="radio" value='{{ question[0] }}' style="color:#547070;"> {{ question[0] }} <input name="{{ question[1] }}" type="radio" value="{{ question[1] }}" style="color:#547070;"> {{ question[1] }}</p>
     						{% endfor %}
-    						<p><input type="submit" value="Провеить"></p>
+    						<p><input type="submit" value="Проверить" style="background-color:#D6BE6E; border-radius: 5px 5px 5px 5px;"></p>
     					</form>
 					</div>
 				</div>
