@@ -277,7 +277,7 @@ def find_news():
             i += 1
     first_ten
 
-    return first_ten, max_quantity, how_often_news.keys()
+    return first_ten, max_quantity, how_often_news
 
 
 @app.route('/')
