@@ -192,8 +192,8 @@ def construct_new_word(word, stemm, gramm_inf, old_form, gramm_inf_next=''):
         for letter in for_adj[3:]:
             prepos += letter
     span = prepos
-    span = span.replace('&', '<span style="text-rendering:auto;">&')
     span = span.replace(';', ';</span>')
+    span = span.replace('&', '<span style="text-rendering:auto;">&')
     return span               
 
 
