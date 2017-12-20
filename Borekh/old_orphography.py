@@ -190,8 +190,11 @@ def construct_new_word(word, stemm, gramm_inf, old_form, gramm_inf_next=''):
     if for_adj.startswith('чрес'):
         prepos = 'чрез'
         for letter in for_adj[3:]:
-            prepos += letter                      
-    return prepos               
+            prepos += letter
+    span = prepos
+    span = span.replace('&', '<span style="text-rendering:auto;">&')
+    span = span.replace(';', ';</span>')
+    return span               
 
 
 def create_new_phrase(phrase):
@@ -262,12 +265,7 @@ def index():
 def word_into_old():
     phrase = request.args['the_word']
     new_phrase = create_new_phrase(phrase)
-    return redirect(url_for('show_the_old_word', word = new_phrase))
-
-
-@app.route('/old_spelling/<word>')
-def show_the_old_word(word):
-    return render_template('word_page.html', weather_st=find_weather(), old_word=word)
+    return render_template('word_page.html', weather_st=find_weather(), old_word=new_phrase)
 
 
 @app.route('/get_the_text')
