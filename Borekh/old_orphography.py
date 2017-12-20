@@ -291,7 +291,7 @@ def create_a_test():
         htmlreader = csv.reader(csvfile, delimiter='|')
         for line in htmlreader:
             questions.append(line)
-    return render_template('test_page.html', questions=questions)
+    return render_template('test_page.html', weather_st=find_weather(), questions=questions)
 
 
 @app.route('/test_result')
@@ -306,7 +306,7 @@ def get_test_results():
         if request.args[question[1]] == question[2]:
             result += 1
     results = str(result) + ' из 10'
-    return render_template('test_results_page.html', results=results)
+    return render_template('test_results_page.html', weather_st=find_weather(), results=results)
 
 
 if __name__ == '__main__':
