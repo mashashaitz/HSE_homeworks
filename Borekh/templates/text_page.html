@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>mine is more beautiful</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="description" content="информация и немного глупостей">
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	</head>
+	<body>
+		<header style="background-color:#D6BE6E; padding-top: 10px; padding-bottom: 10PX; border-radius: 0px 50px;"> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<h1 style="color:#547070;">OLD ORPHOGRAPHY</h1>
+						<hr style="border-top-color:#547070; border-top-width: 3px;" >
+						<p><i style="color:#547070;">{{ most_common_words }}</i></p> 
+	                </div>
+	            </div>
+			</div>
+		</header>
+		<section id="TextAndTest">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-sm-12">
+					{% for new in news %}
+	        			<p><i style="color:#547070;">{{ new }}</i></p>
+	    			{% endfor %}
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

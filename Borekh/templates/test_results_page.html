@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>mine is more beautiful</title>
+	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<meta name="description" content="информация и немного глупостей">
+		<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	</head>
+	<body>
+		<header style="background-color:#D6BE6E; padding-top: 10px; padding-bottom: 10PX; border-radius: 0px 50px;"> 
+			<div class="container"> 
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 col-sm-12">
+						<h1 style="color:#547070;">OLD ORPHOGRAPHY</h1>
+						<hr style="border-top-color:#547070; border-top-width: 3px;" >
+						<p><i style="color:#547070;">{{ weather_st }}</i></p> 
+	                </div>
+	            </div>
+			</div>
+		</header>
+		<section id="TextAndTest">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-md-offset-2 col-sm-12">
+						<form action="/get_a_word" method="GET">
+							<p><i style="color:#547070;">Как бы это слово выглядело в древнерусской орфографии?</i></p> 
+							<p><input type="text" name="the_word" style="border-radius: 5px 5px 5px 5px;"/></p>
+							<input type="submit" value="Давайте посмотрим!" style="background-color:#D6BE6E; border-radius: 5px 5px 5px 5px;"></p>
+							</form>
+					</div>
+					<div class="col-md-3 col-md-offset-5 col-sm-12">
+						<form action="/get_the_text" method="GET">
+							<p><i style="color:#547070;">Не хотите ли почитать актуальные новости?</i></p> 
+							<input type="submit" value="Хочу!" style="background-color:#D6BE6E; border-radius: 5px 5px 5px 5px;"></p>
+						</form>
+					</div>
+					<div class="col-md-3 col-md-offset-10 col-sm-12">
+						<p><i style="color:#547070;">Вы играете очень хорошо.</i></p> 
+						<p><i style="color:#547070;">{{ results }}</i></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
