@@ -192,8 +192,14 @@ def construct_new_word(word, stemm, gramm_inf, old_form, gramm_inf_next=''):
         for letter in for_adj[3:]:
             prepos += letter
     span = prepos
-    span = span.replace(';', ';</span>')
-    span = span.replace('&', '<span>&')
+    span = span.replace('&#1141;', 'ѵ')
+    span = span.replace('&#1140;', 'Ѵ')
+    span = span.replace('&#1138;', 'Ѳ')
+    span = span.replace('&#1139;', 'ѳ‎')
+    span = span.replace('&#1122;', 'Ѣ‎')
+    span = span.replace('&#1109;', 'І')
+    span = span.replace('&#1123;', 'ѣ')
+    span = span.replace('&#1110;', 'і')
     return span               
 
 
