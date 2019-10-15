@@ -1,5 +1,5 @@
 to get a nest for a certain word you may need to please
-1) download nests_new1.json.zip
+1) download nests_new.json.zip
 2) unpack it
 3) download user_version.ipynb
 4) put them in one folder
